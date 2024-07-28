@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color:rgb(88, 19, 123);
+    background: linear-gradient(90deg, rgb(202, 97, 255), rgb(171, 4, 255) 100%);
+    color:red;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  
+  .temperature-converter {
+    background:rgba(146, 0, 204, 0.749);
+    border: 2px rgb(124, 0, 161) solid;
+    border-radius: 8%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px 45px;
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+    box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);
+  }
+  
+  .title {
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .result {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .result-heading {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .celsius-value {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+  }
+  label {
+    color: #000000;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  input,
+  select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  input:focus {
+    border: 1px solid #000000;
+  }
+  .degree-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+  }
+  option {
+    background-color: #f23eff;
+    color: #000000;
+  }
+  #convert-btn {
+    background: linear-gradient(to bottom, #a007ff, #b056fa);
+    border: none;
+    outline: 1px solid #000000;
+    border-radius: 5px;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+  }
+  #convert-btn:hover {
+    background: linear-gradient(to bottom, #bf2aff, #9131c2);
+  }
+
+  
+  .fa {
+    margin-left: -12px;
+    margin-right: 8px;
+  }
+  
+  .loading {
+    display: none;
+  }
